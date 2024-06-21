@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDB História</title>
+    <link rel="stylesheet" href="site.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="main_bar">
+        <a id="logo" href="index.html"><img src="img/IDB-LOGO.png" alt="" height="50px"></a>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Início</a>
+            <a href="historia.html" class="active">Conheça a história</a>
+            <a href="atividades.html">Progamações</a>
+            <div class="dropdown">
+                <button class="dropbtn">Progamações
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="atividades_folder/Escola-Bilica.html">Escola Bíblica</a>
+                    <a href="atividades_folder/Oracao.html">Culto de Oração</a>
+                </div>
+            </div> 
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </nav>
+
+    <div class="main_content" id="history_main">  <!-- Aqui vamos poder fazer a linha do tempo, depois podemos colocar
+                                    uma linha fr mostrando os acotecimentos, falar direitinho da historia
+                                    e podemos citar o livro da historia lá, de referencia-->
+        <h1 id="history_title">
+            História da Igreja de Deus no Brasil.
+        </h1>
+        <p id="historyp">
+            A Igreja de Deus teve seu início na Carolina do Norte, na 
+            cidade de Monroe Tennessee, no ano de 1886. Após alguns anos, em 1935, uma missionária chamada Caroline Mathilda Paulsen, iniciou seu trabalho missionário em Catalão - GO, onde a denominação era Igreja Calvário Pentecostal. Após alguns anos, em 1954, a missionária retornou para os Estados Unidos em busca de um direcionamento Deus, pois não havia como continuar a obra sem o apoio necessário. Ela escreveu para o superintendente da Igreja de Deus para a América Latina, Vessie Hargrave. Ela mencionou na carta, a possibilidade de passar a administração do trabalho missionário que iniciou em Goiás, para a Igreja de Deus. A ideia foi muito agradável para o superintendente, que achou ser uma boa oportunidade. Os detalhes foram acertados, e a reunião que oficializou a união do Calvário Pentecostal com a Igreja de Deus aconteceu em 12 de março de 1955, onde, por meio desta união, a Igreja de Deus estava finalmente presente no Brasil. Após essa união, o missionário Wayne McAfee foi colocado como supervisor do trabalho da Igreja de Deus no Brasil, e após ele vieram outros. Desde então a Igreja de Deus vem crescendo no Brasil, para honra e glória do Senhor.
+        </p>
+        <br>
+        <h3>
+            Gostaríamos de destacar a importância de alguns missionários que deram continuidade ao trabalho ou contribuíram para o estabelecimento da Igreja de Deus no Brasil.
+        </h3>
+            <br>
+            
+        <p id="missions">
+            Billy Elwood Watson, conhecido como Bill Watson. <br>
+            As quatro missionárias: Janet Carter, Millie Crosswhithe, Ruth Crawford e Frances Poe.  <br>
+            Jack Pope e a esposa Evelyn. <br>
+            Noel de Sosa e a esposa Concepción.  <br> 
+            Philip Shearer e a esposa Jaqueline. <br>
+            Pearl Stark Wilson. <br>
+            Harold Bradfield e a esposa Jean. <br>
+            Bryan Hersey e a esposa Diana. <br>
+            John Hayes e a esposa Kátia. <br>
+            Gloretta V. Anderson. <br>
+            Dan Sandoval e a esposa Patrícia. <br>
+        </p>
+
+        <p id="fonts">Fonte: História da Igreja de Deus, por Silas Pereira de Carvalho. <br>
+            Fonte: <a class="link" 
+            href="https://pt.m.wikipedia.org/wiki/Igrejas_de_Deus_no_Brasil" target="_blank" 
+            rel="noopener noreferrer">https://pt.m.wikipedia.org/wiki/Igrejas_de_Deus_no_Brasil</a>  <br>
+        </p>
+    </div>
+
+    <footer>
+        <div class="canais_3">
+            <p>Localização: Custódio Pereira - Rua Prudente de Moraes 170.</p>
+            <p>Cnpj: 17.558.059/001-45.</p>
+            <ul>
+                <li> <a href="https://youtube.com/@idbcustodio" target="_blank" rel="noopener noreferrer">
+                    <img src="img/yt_logo.png" alt="" width="40px"></a></li>
+                <li> <a href="https://www.instagram.com/custodioidb" target="_blank" rel="noopener noreferrer">
+                    <img src="img/insta_logo.png" alt="" width="40px"> </a></li>
+                <li> <a href="https://www.facebook.com/noticiasidbcustodio" target="_blank" rel="noopener noreferrer">
+                    <img src="img/facebook_logo.png" alt="" width="40px"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+</body>
+</html>
