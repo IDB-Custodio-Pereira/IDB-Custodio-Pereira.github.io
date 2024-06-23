@@ -4,17 +4,18 @@
     font-style: italic;
 }
 
-body{
+body {
     background-color: rgb(142, 145, 132);
     margin: 0px;
     padding: 0px;
     font-family: "Poppins", sans-serif;
     text-decoration: none;
 }
+
 .topnav {
     overflow: hidden;
     background-color: rgb(255, 255, 255);
-    color:black;
+    color: black;
 }
 
 .topnav a {
@@ -43,7 +44,7 @@ div .active {
 }
 
 .dropdown .dropbtn {
-    font-size: 17px;    
+    font-size: 17px;
     border: none;
     outline: none;
     color: white;
@@ -58,7 +59,7 @@ div .active {
     position: absolute;
     background-color: rgb(126, 134, 101);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 99999;
 
 }
@@ -72,7 +73,8 @@ div .active {
     text-align: left;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav a:hover,
+.dropdown:hover .dropbtn {
     background-color: rgb(126, 134, 101);
     color: white;
 }
@@ -97,20 +99,20 @@ p {
     text-align: center;
     display: block;
     color: white;
+    text-shadow: 1px 1px 30px black;    
 }
 
 footer div {
-    font-family: "Marker Felt, fantasy", sans-serif ;
+    font-family: "Marker Felt, fantasy", sans-serif;
     text-align: justify;
-    height:30px;
+    height: 30px;
     margin: 0;
     clear: both;
-    width:100%;
+    width: 100%;
     position: block;
-    
 }
 
-h3{
+h3 {
     color: white;
 }
 
@@ -128,7 +130,7 @@ h3{
 .drop {
     margin: 0;
     padding: 0;
-    
+
 }
 
 .canais_3 {
@@ -165,7 +167,7 @@ h3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
-} 
+}
 
 .item {
     text-align: center;
@@ -173,7 +175,7 @@ h3{
     font-weight: normal;
 }
 
-.item a img{
+.item a img {
     width: 30em;
     overflow: hidden;
 }
@@ -184,40 +186,55 @@ h3{
 
 /* ------------------------------media query--------------------------*/
 @media screen and (max-width: 1200px) {
-    .topnav a:not(:first-child), .dropdown .dropbtn {
-      display: none;
+
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
     }
+
     .topnav a.icon {
-      float: right;
-      display: block;
+        float: right;
+        display: block;
     }
+
     #logo {
         display: none;
     }
-  }
-  
+}
+
 @media screen and (max-width: 1200px) {
-.topnav.responsive {position: relative; z-index: 99999;} 
-.topnav.responsive .icon {
-    position: absolute;
-    width: 100%;
-    right: 0;
-    top: 0;
-}
-.topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-}
+    .topnav.responsive {
+        position: relative;
+        z-index: 99999;
+    }
 
-.topnav.responsive .dropdown {float: none;}
-.topnav.responsive .dropdown-content {position: relative;}
-.topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
+    .topnav.responsive .icon {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 0;
+    }
 
-}
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -225,21 +242,22 @@ h3{
         margin-top: 10px;
         display: block;
         width: 100%;
-    } 
-    
+    }
+
     .item {
         text-align: center;
         font-size: 100%;
         font-weight: normal;
     }
-    
-    .item a img{
+
+    .item a img {
         width: 100%;
-        text-align:center;
-        overflow:hidden;
+        text-align: center;
+        overflow: hidden;
     }
-    
+
 }
+
 /* ------------------------------media query--------------------------*/
 #logo {
     background-color: white;
@@ -257,7 +275,7 @@ h3{
     background-image: url("img/A.avif");
     background-repeat: no-repeat;
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     position: relative;
 
 }
@@ -271,16 +289,17 @@ h3{
     background-color: rgb(140, 148, 116);
     color: white;
 }
-#history_title{
-    color: white ;
+
+#history_title {
+    color: white;
     text-align: center;
 }
 
-#history_main{
+#history_main {
     margin: 30px;
 }
 
-#fonts{
+#fonts {
     color: black;
     font-size: small;
 }
