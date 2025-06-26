@@ -1,81 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IDB Custódio Pereira</title>
-    <link rel="stylesheet" href="site.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDB Custódio Pereira</title>
+  <link rel="stylesheet" href="site.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav id="main_bar">
-        <a id="logo" href="index.html"><img src="img/IDB-LOGO.png" alt="" height="50px"></a>
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Início</a>
-            <a href="historia.html">Conheça a história</a>
-            <a href="atividades.html">Progamações</a>
-            <div class="dropdown">
-                <button class="dropbtn">Progamações
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="atividades_folder/Escola-Bilica.html">Escola Bíblica</a>
-                    <a href="atividades_folder/Oracao.html">Culto de Oração</a>
-                </div>
-            </div> 
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-    </nav>
-        
-    </nav>
+<div id="header-placeholder"></div>
 
-    <div id="main_page_begin">
-        <h1>Igreja de Deus no Brasil</h1>
-        <h2>Custódio Pereira</h2>
-    </div>
-    <div class="main_content" id="main_main"> <!-- A ideia é fazer um conteúdo introdutório a igreja aqui, falar dos pastores, 
-                                    talvez colocar alguns textos falando sobre a igreja em si, a estrutura
-                                    por que vir a igreja, e talvez umas passagens da biblia, tudo isso com imagens
-                                     com atributo "display: float;" ou algo assim-->
-        <p>
-            Vocês, porém, são geração eleita, sacerdócio real, nação santa,
-             povo exclusivo de Deus,<br> para anunciar as grandezas daquele que
-              os chamou das trevas para a sua maravilhosa luz. <br> Antes vocês 
-              nem sequer eram povo, mas agora são povo de Deus;<br> não haviam 
-              recebido misericórdia, mas agora a receberam.
-            <p class="citation">1 Pedro 2:9-10</p>
-
-        </p>
-    </div>
-
-    <footer>
-        <div class="canais_3">
-            <p>Localização: Custódio Pereira - Rua Prudente de Moraes 170.</p>
-            <p>Cnpj: 17.558.059/001-45.</p>
-            <ul>
-                <li> <a href="https://youtube.com/@idbcustodio" target="_blank" rel="noopener noreferrer">
-                        <img src="img/yt_logo.png" alt="" width="40px"></a></li>
-                <li> <a href="https://www.instagram.com/custodioidb" target="_blank" rel="noopener noreferrer">
-                        <img src="img/insta_logo.png" alt="" width="40px"> </a></li>
-                <li> <a href="https://www.facebook.com/noticiasidbcustodio" target="_blank" rel="noopener noreferrer">
-                        <img src="img/facebook_logo.png" alt="" width="40px"></a></li>
-            </ul>
-        </div>
-    </footer>
     <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
+    fetch("header.html")
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+        });
     </script>
+
+
+  <div id="main_page_begin">
+    <h1>Igreja de Deus no Brasil</h1>
+    <h2>Custódio Pereira</h2>
+  </div>
+
+  <div class="main_content" id="main_main">
+    <p>
+      Vocês, porém, são geração eleita, sacerdócio real, nação santa,
+      povo exclusivo de Deus,<br> para anunciar as grandezas daquele que
+      os chamou das trevas para a sua maravilhosa luz. <br> Antes vocês 
+      nem sequer eram povo, mas agora são povo de Deus;<br> não haviam 
+      recebido misericórdia, mas agora a receberam.
+      <p class="citation">1 Pedro 2:9-10</p>
+    </p>
+
+    <div id="versiculo-carousel" class="versiculo-box">
+    <p id="versiculo-text">Carregando versículo...</p>
+    <div class="versiculo-buttons">
+        <button id="btn-anterior">Anterior</button>
+        <button id="btn-proximo">Próximo</button>
+    </div>
+    </div>
+
+
+  </div>
+
+  <footer>
+    <div class="canais_3">
+      <p>Localização: Custódio Pereira - Rua Prudente de Moraes 170.</p>
+      <p>Cnpj: 17.558.059/001-45.</p>
+      <ul>
+        <li><a href="https://youtube.com/@idbcustodio" target="_blank"><img src="img/yt_logo.png" alt="" width="40px"></a></li>
+        <li><a href="https://www.instagram.com/custodioidb" target="_blank"><img src="img/insta_logo.png" alt="" width="40px"></a></li>
+        <li><a href="https://www.facebook.com/noticiasidbcustodio" target="_blank"><img src="img/facebook_logo.png" alt="" width="40px"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  <script src="versiculos.js"></script>
 </body>
-
-
 </html>

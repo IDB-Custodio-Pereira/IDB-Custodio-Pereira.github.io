@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doações - IDB Custódio Pereira</title>
+  <link rel="stylesheet" href="site.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <main class="doacao-main">
+    <section class="doacao-section">
+      <h1>Doações</h1>
+      <p>Seu apoio nos ajuda a continuar espalhando a Palavra de Deus e servindo à comunidade.</p>
+
+      <div class="versiculo-doacao">
+        <p>"Cada um contribua segundo propôs no coração, não com tristeza ou por necessidade; porque Deus ama a quem dá com alegria." <br> <span class="citation">2 Coríntios 9:7</span></p>
+      </div>
+
+      <div class="doacao-instrucoes">
+        <h2>Como Doar</h2>
+        <ul>
+          <li>PIX: 17.558.059/001-45</li>
+          <li>Presencialmente na igreja, durante os cultos</li>
+        </ul>
+      </div>
+    </section>
+    <script>
+    const versiculos = [
+        `"Deem, e será dado a vocês: uma boa medida, calcada, sacudida e transbordante será dada..." - Lucas 6:38`,
+        `"Tudo o que fizerem, façam de todo o coração, como para o Senhor, e não para os homens." - Colossenses 3:23`,
+        `"O Senhor ama a quem dá com alegria." - 2 Coríntios 9:7`
+    ];
+
+    window.addEventListener('load', () => {
+        const elementos = document.querySelectorAll('.versiculo-doacao p');
+        elementos.forEach((el, i) => {
+        if (versiculos[i]) el.innerText = versiculos[i];
+        });
+    });
+    </script>
+
+  </main>
+
+  <footer>
+    <div class="canais_3">
+      <p>Localização: Custódio Pereira - Rua Prudente de Moraes 170.</p>
+      <p>Cnpj: 17.558.059/001-45.</p>
+      <ul>
+        <li><a href="https://youtube.com/@idbcustodio" target="_blank"><img src="img/yt_logo.png" alt="" width="40px"></a></li>
+        <li><a href="https://www.instagram.com/custodioidb" target="_blank"><img src="img/insta_logo.png" alt="" width="40px"></a></li>
+        <li><a href="https://www.facebook.com/noticiasidbcustodio" target="_blank"><img src="img/facebook_logo.png" alt="" width="40px"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
